@@ -58,6 +58,9 @@ public class Main{
   System.out.println(numbers.length);
   Arrays.sort(numbers);
   System.out.println(Arrays.toString(numbers));
+   //multi dimensional Array
+  int[][] number = new int [5] [2];
+  System.out.println(Arrays.deepToString(number));
 
  }
 }
