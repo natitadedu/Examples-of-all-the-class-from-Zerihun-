@@ -1,0 +1,35 @@
+public class javaOperators{
+    public static void main(String[] args){
+
+        int a=10;
+        int b=5;
+        System.out.println(a+b); //15
+        System.out.println(b-a); //-5
+        System.out.println(a*b); //50
+        System.out.println(a/b); //2
+        System.out.println(a%b); //0
+
+        int fNumber = 8;
+        int sNumber = 19;
+        boolean value = fNumber > sNumber;
+        System.out.println(value);
+
+        int aNumber = 20;
+        int bNumber = 21;
+        System.out.println(aNumber > bNumber);
+
+        boolean payment = true;
+        boolean hasGrade =false;
+        boolean taskCompleted =true;
+        boolean registration =(payment && (hasGrade || taskCompleted));
+        System.out.println(registration);
+
+        boolean criminalRecord = true;
+        boolean bankSaving = true;
+        boolean goodSalary = true;
+        boolean scoreCard = true;
+
+        boolean loan = !criminalRecord && ((scoreCard && (bankSaving ||goodSalary))||(bankSaving &&goodSalary));
+        System.out.println(loan);
+    }
+}
